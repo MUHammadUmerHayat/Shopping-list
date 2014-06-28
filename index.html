@@ -8,20 +8,37 @@
 </head>
 <body>
 	<div id="header">
-
-	</div id="content">
-	<div>
-		<h2>Welcome to the Online Shopping Cart list</h2>
-		<p>Feel free to update your cart</p>
-		<form>
-			<label for="list_update">Update List</label>
-			<input type="text" name="list" id="list_update">
-			<input type="button" value="Remove Item" name="remove_item">
-			<input type="submit" name="add_item" value="Add Item">
-		</form>
+		<h2>Welcome to the Online Shopping list</h2>
+		<p>Feel free to update your List</p>
+	</div>
+	<div id="content">
+		<div id="left_side">
+			<a href="#">Instructions</a> <br>
+			<form id="form">
+				<label for="list_update">Update List</label>
+				<input type="text" name="list" id="new_item">
+				<input type="submit" name="add_item" value="Add Item">
+				<input type="button" name="arrange_items" value="Order List">
+			</form>
+		</div>
+		<div id="right_side">
+			<h3>Items</h3>
+			<div id="list">
+				<ul id="item_list">
+					<li><input type="checkbox" name="check">First stuff.....</li>
+					<li><input type="checkbox" name="check" >.............</li>
+					<li><input type="checkbox" name="" value="First list">.............</li>
+					<li><input type="checkbox" name="" value="First list">.............</li>
+				</ul>
+			</div>
+		</div>
 	</div>
 	<div id="footer">
-
+		<ul>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact</a></li>
+	</ul>
+		<h4> 2014 &copy Generalgmt</h4>
 	</div>
 </body>
 </html>
