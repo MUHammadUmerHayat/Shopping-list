@@ -16,8 +16,9 @@
 			<a href="#">Instructions</a> <br>
 			<form id="form">
 				<label for="list_update">Update List</label>
-				<input type="text" name="list" id="new_item">
+				<input type="text" name="list" id="new_item" placeholder="Enter your new item"><span id="err_message">Please Enter a Valid String</span>
 				<input type="submit" name="add_item" value="Add Item">
+				<input type="button" name="select_all" value="select All" id="select_all">
 				<input type="button" name="arrange_items" value="Order List">
 			</form>
 		</div>
@@ -25,10 +26,11 @@
 			<h3>Items</h3>
 			<div id="list">
 				<ul id="item_list">
-					<li><input type="checkbox" name="check">First stuff.....</li>
+<!-- This was used for testing -->
+				<!-- 	<li><input type="checkbox" name="check">First stuff.....</li>
 					<li><input type="checkbox" name="check" >.............</li>
 					<li><input type="checkbox" name="" value="First list">.............</li>
-					<li><input type="checkbox" name="" value="First list">.............</li>
+					<li><input type="checkbox" name="" value="First list">.............</li> -->
 				</ul>
 			</div>
 		</div>
