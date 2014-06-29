@@ -30,7 +30,10 @@ $("#form").submit(function(event){
 	$("li").dblclick(function(){
 		$(this).remove();	
 	});
-	$("").click(function(){
-		$('ul').sort();
+	$("#sort_item").click(function(){
+		$('ul').sortable();
+	});
+	$("#reset_all").click(function(){
+		location.reload();
 	});
 });
