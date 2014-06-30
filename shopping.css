@@ -65,7 +65,7 @@ li{
 	width: 100%;
 	background-color: black;
 	color: white;
-	/*margin-bottom: -10px;*/
+	margin-bottom: -20px;
 	height: 20%;
 	/*position: absolute;*/
 }
@@ -127,6 +127,12 @@ input[type="checkbox"]{
 }
 #err_message{
 	color: blue;
+	display: block;
+	background-color: #f0f5f5;
+	width:70%;
+	border-radius: 5px;
+	border: 2px solid groove;
+	height: 30px;
 }
 #rule {
 	color:orangered;

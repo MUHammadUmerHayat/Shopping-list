@@ -13,14 +13,14 @@ $("#form").submit(function(event){
 		}
 		else{
 			$("#err_message").hide();
-		var curr_item1 = $(
-        "<li>" +
-        "<input type=\"checkbox\" value=\"" + curr_item +"\">" +
-         curr_item +
-        "</li>");
-		 $("#item_list").append(curr_item1);
-		 //append('<li><input type="checkbox" name=""> curr_item</li>');
-		form.reset();
+			var curr_item1 = $(
+		        "<li>" +
+		        "<input type=\"checkbox\" value=\"" + curr_item +"\">" +
+		         curr_item +
+		        "</li>");
+			$("#item_list").append(curr_item1);
+			 //append('<li><input type="checkbox" name=""> curr_item</li>');
+			form.reset();
 		}
 		
 	});
