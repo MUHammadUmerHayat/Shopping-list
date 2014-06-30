@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="shopping.css">
+	<script type="text/javascript" src="../jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="shopping.js"></script>
+</head>
+<body>
+	<div id="header">
+		<h2>Welcome to the Online Shopping list</h2>
+		<p>Feel free to update your List</p>
+	</div>
+	<div id="content">
+		<div id="left_side">
+			<a href="#" id="instr">Instructions</a>
+			<div id="rule">
+				<h3>How to use the Online list items</h3>
+				<p>
+					<ul>
+						<li> Type in your item on the Update list input and click the add item to add</li>
+						<li>To check off any item, click on the item.</li>
+						<li>To remove an item from list, Double Click on it</li>
+					</ul>
+				</p>
+			</div>
+			 <br>
+			<form id="form">
+				<label for="list_update">Update List</label>
+				<input type="text" name="list" id="new_item" placeholder="Enter your new item"><span id="err_message">Please Enter a Valid String</span>
+				<input type="submit" name="add_item" value="Add Item">
+				<input type="button" name="reset_all" value="Reset" id="reset_all">
+				<input type="button" name="sort_items" id="sort_item"value="Sort List">
+			</form>
+		</div>
+		<div id="right_side">
+			<h3>Items</h3>
+			<div id="list">
+				<ul id="item_list">
+<!-- This was used for testing -->
+				<!-- 	<li><input type="checkbox" name="check">First stuff.....</li>
+					<li><input type="checkbox" name="check" >.............</li>
+					<li><input type="checkbox" name="" value="First list">.............</li>
+					<li><input type="checkbox" name="" value="First list">.............</li> -->
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div style="clear:both; height:1px;"></div>
+	<div id="footer">
+		<ul>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact</a></li>
+	</ul>
+		<h4 style="text-align:center;"> 2014 &copy Generalgmt</h4>
+	</div>
+</body>
+</html>
