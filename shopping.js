@@ -45,9 +45,10 @@ $("#form").submit(function(event){
     return $(a).text() > $(b).text() ? 1 : -1;
 		});
 	});
+	$(function() {
+	$( "#item_list" ).sortable();
+	$( "#item_list" ).disableSelection();
+	});
 
 });
-$(function() {
-$( "#item_list" ).sortable();
-$( "#item_list" ).disableSelection();
-});
+	

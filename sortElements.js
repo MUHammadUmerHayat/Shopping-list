@@ -1,5 +1,4 @@
-/**
- * jQuery.fn.sortElements
+/* * jQuery.fn.sortElements
  * --------------
  * @author James Padolsey (http://james.padolsey.com)
  * @version 0.11
