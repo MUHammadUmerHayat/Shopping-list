@@ -4,14 +4,9 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="shopping.css">
 	<script type="text/javascript" src="jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="sortElements.js"></script>
 	<script type="text/javascript" src="shopping.js"></script>
 	<script src="jquery-.js"></script>
-	<script>
-$(function() {
-$( "#item_list" ).sortable();
-$( "#item_list" ).disableSelection();
-});
-</script>
 </head>
 <body>
 	<div id="header">
@@ -38,7 +33,7 @@ $( "#item_list" ).disableSelection();
 				<input type="text" name="list" id="new_item" placeholder="Enter your new item"><span id="err_message">Please Enter a Valid String</span>
 				<input type="submit" name="add_item" value="Add Item">
 				<input type="button" name="reset_all" value="Reset" id="reset_all">
-				<!-- <input type="button" name="sort_items" id="sort_item"value="Sort List"> -->
+				<input type="button" name="sort_items" id="sort_item"value="Sort List">
 			</form>
 		</div>
 		<div id="right_side">

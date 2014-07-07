@@ -15,7 +15,7 @@ $("#form").submit(function(event){
 			$("#err_message").hide();
 			var curr_item1 = $(
 		        "<li>" +
-		        "<input type=\"checkbox\" value=\"" + curr_item +"\">" +
+		        "<input type=\"checkbox\" id ='check' value=\"" + curr_item +"\">" +
 		         curr_item +
 		        "</li>");
 			$("#item_list").append(curr_item1);
@@ -31,12 +31,7 @@ $("#form").submit(function(event){
 	$("#item_list").on("dblclick", "li", function(event){
 		$(this).remove();
 	});
-	// $("#sort_item").click(function(){
-	// 	$("#item_list li").sort(function(a,b){
-	// 		return a.length -b.length;
 
-	// 	});
-	// });
 	$("#reset_all").click(function(){
 		location.reload();
 	});
@@ -44,4 +39,15 @@ $("#form").submit(function(event){
 		event.preventDefault();
 		$("#rule").slideToggle("slow");
 	})
+
+	$("#sort_item").on("click", function(){
+	$('li').sortElements(function(a, b){
+    return $(a).text() > $(b).text() ? 1 : -1;
+		});
+	});
+
+});
+$(function() {
+$( "#item_list" ).sortable();
+$( "#item_list" ).disableSelection();
 });
